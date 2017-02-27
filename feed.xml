@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Jesse M. Porch's Occasional Pretensions of Coherence</title>
+  <link>http://www.jmporch.com#portfolio</link>
+  <atom:link href="http://www.jmporch.com/feed.xml" rel="self" type="application/rss+xml" />
+  <description>Assorted words on videogames, play, and whatever else I'm thinking about at the time.</description>
+  <item>
+    <title>Not With a Bang but a Winter | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-not-with-a-bang-but-a-winter/</link>
+    <guid>http://www.haywiremag.com/columns/playing-for-real-not-with-a-bang-but-a-winter/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the destruction and rebirth in apocalyptic media, with examples from Fallout and The Long Dark.</description>
+  </item>
+  <item>
+    <title>Slaying Dragons | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/slaying-dragons/</link>
+    <guid>http://www.haywiremag.com/columns/slaying-dragons/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the power of vulnerability as demonstrated by Numinous Games' That Dragon, Cancer.</description>
+  </item>
+  <item>
+    <title>Holding Out for a Hero | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-holding-out-for-a-hero/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-holding-out-for-a-hero/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the lack of meaningful weight to the "simulated heroism" of many modern games, especially World of Warcraft. A counter-example is examined in Metro: 2033.</description>
+  </item>
+  <item>
+    <title>Play As You Like | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-play-as-you-like/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-play-as-you-like/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the use of theatrical motif in Final Fantasy IX as it relates to playfulness in the sense used by Ian Bogost in his book Play Anything.</description>
+  </item>
+  <item>
+    <title>Gotta Glitch 'Em All | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-gotta-glitch-em-all/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-gotta-glitch-em-all/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the speedrun, specifically glitch-based approaches, as an artful application of play to explore titles more fully.</description>
+  </item>
+  <item>
+    <title>Reality, Augmented | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-reality-augmented/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-reality-augmented/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is Augmented and Alternate Reality gaming, examining how Niantic's Ingress aligns its many facets to enhance the experience.</description>
+  </item>
+  <item>
+    <title>Free to be Useless | FPS</title>
+    <link>http://www.firstpersonscholar.com/free-to-be-useless/</link>
+	  <guid>http://www.firstpersonscholar.com/free-to-be-useless/</guid>
+    <description>Response to Luca Morini's "Play as the Bulwark of Uselessness", published at First Person Scholar.</description>
+  </item>
+  <item>
+    <title>The Content Factory | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-the-content-factory/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-the-content-factory/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is relationship between the commodification of games and working conditions in the game industry.</description>
+  </item>
+  <item>
+    <title>Let There Be Play | Haywire Magazine</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/</link>
+	  <guid>http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/</guid>
+    <description>Monthly column examining videogames as "play." This month's topic is the connection between videogames, liturgy, and fairytale.</description>
+  </item>
+  <item>
+    <title>Filled, not Emptied | TFA</title>
+    <link>http://trinityfellowsacademy.org/2016/03/28/filled-not-emptied-week-31/</link>
+	  <guid>http://trinityfellowsacademy.org/2016/03/28/filled-not-emptied-week-31/</guid>
+    <description>Weekly update blog post for Trinity Fellows Academy week 31.</description>
+  </item>
+  <item>
+    <title>Book Review: Beyond Choices | FPS</title>
+    <link>http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/</link>
+	  <guid>http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/</guid>
+    <description>Review of Miguel Sicart's book Beyond Choices, published at First Person Scholar.</description>
+  </item>
+  <item>
+    <title>Light in the Darkness | TFA</title>
+    <link>http://trinityfellowsacademy.org/2015/12/24/light-in-the-darkness-weeks-16-17/</link>
+	  <guid>http://trinityfellowsacademy.org/2015/12/24/light-in-the-darkness-weeks-16-17/</guid>
+    <description>Weekly update blog post for Trinity Fellows Academy Weeks 16 and 17.</description>
+  </item>
+  <item>
+    <title>Strengths and Silence | TFA</title>
+    <description>Weekly update blog post for Trinity Fellows Academy Week 3.</description>
+	  <link>http://trinityfellowsacademy.org/2015/09/14/finding-peace-and-discovering-strengths-week-3/</link>
+	  <guid>http://trinityfellowsacademy.org/2015/09/14/finding-peace-and-discovering-strengths-week-3/</guid>
+  </item>
+</channel>
+</rss>
