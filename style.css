@@ -2,31 +2,36 @@ body {
 	font-family: 'Josefin Slab', serif; font-weight: 600;
 	font-size: 14pt;
   width: 100%;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .main {
   margin: auto;
-  width: 70em;
+  height: 640px;
+  width: 1000px;
+  padding-top: 2em;
 }
 /* Sidebar */
 .sidebar {
-  width: 14em;
+  color: rgb(51,51,51);
+  width: 11em;
   background-color: rgb(248, 248, 248);
-  padding: .5em;
-  margin-right: 1em;
+  margin-right: .5em;
   border-radius: 4px;
   border-width: 2px;
   border-style: solid;
   border-color: rgb(230,230,230);
-  height: 628px;
+  height: 100%;
   float: left;
   display: inline-block;
 
 }
 .sidebar-header {
   text-align: center;
-  font-size: 2em;
-  padding-top: .25em;
+  font-size: 1.75em;
+  padding-top: .3em;
+  line-height: 1;
 }
 
 .sidebar-element {
@@ -37,8 +42,8 @@ body {
   border-radius: 4px;
 
   list-style: none;
-  padding: .25em 0;
-  margin: .25em .25em;
+  padding: .25em .5em;
+  margin: .5em .3em;
 }
 
 .sidebar-buttons>li:hover {
@@ -52,7 +57,7 @@ body {
 }
 
 .sidebar-hr {
-  margin: 0 .25em;
+  margin: 0 .5em;
   border-color: rgb(232,232,232);
   opacity: .5;
 }
@@ -64,9 +69,62 @@ body {
 .content {
   float: left;
   display: inline-block;
-  width: 50em;
+  width: calc(100% - 11.75em);
+  height: 100%;
+}
+
+.content-panel {
+  border-style: solid;
+  height: 100%;
+  width: calc(100% - 2px);
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: black;
+  color: rgb(51,51,51);
+  background-color: rgb(238,238,238);
+}
+
+.major-heading {
+}
+
+.major-heading>h2 {
+  margin: .3em;
+}
+
+.minor-heading {
+	font-size: 120%;
+	font-style: italic;
+}
+
+.no-scroll {
+  padding: 0 .5em;
+	overflow: hidden;
+}
+
+.viewport {
+	overflow: auto;
+}
+
+.viewport>p {
+  margin-top: 0;
+}
+
+.headshot {
+  float: left;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 8px;
+  padding: 4px;
+  background-color: white;
 }
 /* End Content*/
+
+.copyright-notice {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 16px;
+  clear: left;
+}
 
 .container .jumbotron {
 	padding-top: 8px;
@@ -76,61 +134,5 @@ body {
 	padding-bottom: 8px;
 	margin-bottom: 0px;
 
-	border-color: #000;
-	border-style: solid;
-	border-bottom-style: none;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-
 	background-color: #DDD;
-}
-
-.major-heading {
-	padding-left: 8px;
-	padding-right: 8px;
-
-	font-size: 145%;
-}
-
-.minor-heading {
-	font-size: 120%;
-	font-style: italic;
-}
-
-.col-body {
-	border-radius: 4px;
-	border-style: solid;
-	border-color: #000;
-
-	border-top-style: none;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-
-	width: 100%;
-	min-height: 560px;
-	max-height: 560px;
-	padding: 12px;
-
-	background-color: #EEE;
-}
-
-.no-scroll {
-	overflow: hidden;
-}
-
-.viewport {
-	overflow: auto;
-}
-
-.navbar-brand {
-	line-height: 36px;
-}
-
-.row-bottom-margin {
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-h2 {
-	margin-top: 10px;
 }
