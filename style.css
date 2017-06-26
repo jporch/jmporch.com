@@ -85,24 +85,25 @@ body {
 }
 
 .major-heading {
-}
-
-.major-heading>h2 {
   margin: .3em;
 }
 
 .minor-heading {
 	font-size: 120%;
 	font-style: italic;
+  margin: 0;
 }
 
 .no-scroll {
-  padding: 0 .5em;
+  padding: 0;
 	overflow: hidden;
 }
 
 .viewport {
 	overflow: auto;
+  min-height: 584px;
+  max-height: 584px;
+  padding: 0 .5em;
 }
 
 .viewport>p {
