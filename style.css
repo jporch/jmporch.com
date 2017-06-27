@@ -5,39 +5,27 @@ body {
   line-height: 1.4;
   margin: 0;
 }
-
-.main {
-  margin: auto;
-  height: 640px;
-  width: 1000px;
-  padding-top: 2em;
-}
 /* Sidebar */
 .sidebar {
   color: rgb(51,51,51);
-  width: 11em;
   background-color: rgb(248, 248, 248);
   margin-right: .5em;
   border-radius: 4px;
   border-width: 2px;
   border-style: solid;
   border-color: rgb(230,230,230);
-  height: 100%;
   float: left;
   display: inline-block;
-
 }
 .sidebar-header {
   text-align: center;
   font-size: 1.75em;
-  padding-top: .3em;
+  padding: .3em 0;
   line-height: 1;
 }
-
 .sidebar-element {
   padding-left: 0;
 }
-
 .sidebar-element>li {
   border-radius: 4px;
 
@@ -45,23 +33,19 @@ body {
   padding: .25em .5em;
   margin: .5em .3em;
 }
-
 .sidebar-buttons>li:hover {
   background-color: rgb(220,220,220);
   transition: background 250ms ease-out;
 }
-
 .sidebar-element>li>a {
   color: rgb(35, 82, 124);
   text-decoration: none;
 }
-
 .sidebar-hr {
   margin: 0 .5em;
   border-color: rgb(232,232,232);
   opacity: .5;
 }
-
 /* End Sidebar */
 
 /* Content */
@@ -71,6 +55,7 @@ body {
   display: inline-block;
   width: calc(100% - 11.75em);
   height: 100%;
+  display: box;
 }
 
 .content-panel {
@@ -86,10 +71,12 @@ body {
 
 .major-heading {
   margin: .3em;
+  width: 100%;
 }
 
 .minor-heading {
 	font-size: 120%;
+  width: 100%;
 	font-style: italic;
   margin: 0;
 }
@@ -120,10 +107,55 @@ body {
 }
 /* End Content*/
 
+
+/* Desktop Layout */
+@media screen and (min-width: 500px) {
+  .main {
+    margin: auto;
+    max-height: 640px;
+    max-width: 1280px;
+    padding-top: 2em;
+  }
+  .sidebar {
+    height: 100%;
+    width: 11em;
+    float: left;
+    display: inline-block;
+  }
+  .content {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 11.75em);
+  }
+}
+/* End Sidebar Desktop*/
+
+/* Mobile Layout */
+@media screen and (max-width: 499px) {
+  .main {
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+  }
+  .sidebar {
+    width: 100%;;
+    display: block;
+  }
+  .sidebar-nav {
+    display: none;
+  }
+  .content {
+    display: block;
+    width:100%;
+  }
+}
+/* End Sidebar Mobile */
+
 .copyright-notice {
   text-align: center;
-  padding-top: 1em;
-  font-size: 16px;
+  padding-top: .5em;
+  font-size: 14px;
   clear: left;
 }
 

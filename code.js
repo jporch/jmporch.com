@@ -1,3 +1,18 @@
+var $ = jQuery;
+
+$(document).ready(function() {
+  $(".sidebar-header").click(function(){
+    toggleSidebar();
+  })
+});
+
+function toggleSidebar() {
+  if ($(window).width() < 500){
+    $(".sidebar-nav").slideToggle(400);
+    $(".no-scroll").slideToggle(400);
+  }
+}
+
 function clearPage() {
   $('div#about').hide();
   $('div#work').hide();
@@ -7,7 +22,7 @@ function clearPage() {
 };
 
 function newPage() {
-  var hash = window.location.hash;	
+  var hash = window.location.hash;
   switch(hash.toString()) {
     case '#about':
       dispAbout();
@@ -39,7 +54,7 @@ function dispAbout() {
 function dispWork() {
   clearPage();
   $('div#work').fadeIn(400);
-  $('div#work-text').scrollTop(0);  
+  $('div#work-text').scrollTop(0);
 };
 
 function dispEducation() {
