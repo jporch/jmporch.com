@@ -4,73 +4,48 @@ $(document).ready(function() {
   $(".sidebar-header").click(function(){
     toggleSidebar();
   })
+  $(".sidebar-buttons").children().click(function(event){
+    window.location.hash = $(this).attr('value');
+    dispTab();
+    event.preventDefault();
+    return false;
+  });
+  newPage();
 });
 
-function toggleSidebar() {
+function toggleSidebar(speed=400) {
   if ($(window).width() < 500){
-    $(".sidebar-nav").slideToggle(400);
-    $(".no-scroll").slideToggle(400);
+    $(".sidebar-nav").slideToggle(speed);
+    $(".no-scroll").slideToggle(speed);
   }
 }
 
 function clearPage() {
-  $('div#about').hide();
-  $('div#work').hide();
-  $('div#education').hide();
-  $('div#portfolio').hide();
-  $('div#hobbies').hide();
+  $('#about').hide();
+  $('#work').hide();
+  $('#education').hide();
+  $('#portfolio').hide();
+  $('#hobbies').hide();
 };
 
 function newPage() {
+  dispTab(false);
+};
+
+function dispTab(minimizeNav=true) {
+  clearPage();
   var hash = window.location.hash;
-  switch(hash.toString()) {
-    case '#about':
-      dispAbout();
-      break;
-    case '#work':
-      dispWork();
-      break;
-    case '#education':
-      dispEducation();
-      break;
-    case '#portfolio':
-      dispPortfolio();
-      break;
-	case '#hobbies':
-      dispHobbies();
-      break;
-    default:
-      dispAbout();
-      break;
-	}
-};
+  if (!(['#about','#work','#education','#portfolio','#hobbies'].includes(hash))) {
+    hash = '#about';
+  }
 
-function dispAbout() {
-  clearPage();
-  $('div#about').fadeIn(400);
-  $('div#about-text').scrollTop(0);
-};
-
-function dispWork() {
-  clearPage();
-  $('div#work').fadeIn(400);
-  $('div#work-text').scrollTop(0);
-};
-
-function dispEducation() {
-  clearPage();
-  $('div#education').fadeIn(400);
-  $('div#education-text').scrollTop(0);
-};
-
-function dispPortfolio() {
-  clearPage();
-  $('div#portfolio').fadeIn(400);
-  $('div#portfolio-text').scrollTop(0);
-};
-
-function dispHobbies() {
-  clearPage();
-  $('div#hobbies').fadeIn(400);
-  $('div#hobbies-text').scrollTop(0);
-};
+  $(hash).fadeIn(400);
+  if ($(window).width() >= 500) {
+    $(hash).scrollTop(0);
+  } else {
+    window.scrollTo(0,0);
+    if(minimizeNav) {
+      toggleSidebar();
+    }
+  }
+}
