@@ -95,7 +95,8 @@ html, body {
 
 
 /* Desktop Layout */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-resolution: 1dppx),
+  screen and (max-width: 1080px) and (min-resolution: 2ddpx) {
   .main {
     margin: auto;
     max-height: 640px;
@@ -128,7 +129,8 @@ html, body {
 /* End Sidebar Desktop*/
 
 /* Mobile Layout */
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 499px),
+screen and (max-width: 1440px) and (min-resolution: 2dppx) {
   .main {
     width: 100%;
     padding-top: 0;

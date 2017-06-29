@@ -4,17 +4,24 @@ $(document).ready(function() {
   $(".sidebar-header").click(function(){
     toggleSidebar();
   })
-  $(".sidebar-buttons").children().click(function(event){
-    window.location.hash = $(this).attr('value');
+  $('.sidebar-buttons').children().click(function() {
+    window.location.hash = $(this).attr('class');
+  });
+  $(window).on('hashchange', function() {
     dispTab();
-    event.preventDefault();
-    return false;
   });
   newPage();
 });
 
+function isMobile() {
+  return window.matchMedia("screen and (max-width: 499px), screen and (max-width: 1440px) and (min-resolution: 2dppx)").matches;
+}
+function isDesktop() {
+  return window.matchMedia("screen and (min-width: 500px) and (max-resolution: 1dppx), screen and (max-width: 1080px) and (min-resolution: 2ddpx)").matches;
+}
+
 function toggleSidebar(speed=400) {
-  if ($(window).width() < 500){
+  if (isMobile()){
     $(".sidebar-nav").slideToggle(speed);
     $(".no-scroll").slideToggle(speed);
   }
@@ -40,8 +47,8 @@ function dispTab(minimizeNav=true) {
   }
 
   $(hash).fadeIn(400);
-  if ($(window).width() >= 500) {
-    $(hash).scrollTop(0);
+  if (isDesktop()) {
+    $(hash+'-text').scrollTop(0);
   } else {
     window.scrollTo(0,0);
     if(minimizeNav) {
