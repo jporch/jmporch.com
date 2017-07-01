@@ -14,10 +14,10 @@ $(document).ready(function() {
 });
 
 function isMobile() {
-  return window.matchMedia("screen and (max-width: 499px), screen and (max-width: 1440px) and (min-resolution: 2dppx)").matches;
+  return window.matchMedia("screen and (max-width: 640px)").matches;
 }
 function isDesktop() {
-  return window.matchMedia("screen and (min-width: 500px) and (max-resolution: 1dppx), screen and (max-width: 1080px) and (min-resolution: 2ddpx)").matches;
+  return window.matchMedia("screen and (min-width: 641px)").matches;
 }
 
 function toggleSidebar(speed=400) {
@@ -28,11 +28,7 @@ function toggleSidebar(speed=400) {
 }
 
 function clearPage() {
-  $('#about').hide();
-  $('#work').hide();
-  $('#education').hide();
-  $('#portfolio').hide();
-  $('#hobbies').hide();
+  $('.content-panel').hide();
 };
 
 function newPage() {
