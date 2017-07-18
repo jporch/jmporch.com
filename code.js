@@ -10,6 +10,9 @@ $(document).ready(function() {
   $(window).on('hashchange', function() {
     dispTab();
   });
+  $('.collapse').click(function() {
+    $(this).children('.collapse-body').slideToggle(400);
+  });
   newPage();
 });
 
