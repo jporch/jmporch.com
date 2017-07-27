@@ -9,6 +9,8 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/6098237622.js"></script>
     <link href='style.css' rel='stylesheet'>
     <script src='code.js'></script>
   </head>
@@ -29,7 +31,7 @@
             <li id="work_button" class="#work"><a href="#work">Work Experience</a></li>
             <li id="education_button" class="#education"><a href="#education">Education</a></li>
             <li id="portfolio_button" class="#portfolio"><a href="#portfolio">Portfolio</a></li>
-            <li id="hobbies_button" class="#hobbies"><a href="#hobbies">Hobbies</a></li>
+            <li id="hobbies_button" class="#hobbies" style="display:none;"><a href="#hobbies">Hobbies</a></li>
           </ul>
           <hr class="sidebar-hr">
           <ul class="sidebar-element sidebar-contact">
@@ -63,33 +65,45 @@
           <h2 class="major-heading">Work Experience</h2>
           <div class="no-scroll">
             <div class="viewport" id="work-text">
-              <h5 class="minor-heading">Application Developer, Harvard Law School, Cambridge, MA</h5>
-              <p>2016-Present</p>
-              <p>At Harvard Law School I serve as part of the Business Solutions team within Internet Technology Services department. My role supports the planning, development, maintenance, and ongoing support of a stable of internal applications supporting major elements of the school's day-to-day operations. Here I work alongside other departments to ensure the systems provided support their business needs as a part of the greater HLS community.<p>
-              <p>Specific responsibilities include:</p>
-              <ul>
-                <li>Ongoing support and enhancement of the <a href="https://hls.harvard.edu" target="_blank">HLS website</a> (Wordpress/PHP)</li>
-                <li><a href="https://hls.harvard.edu/faculty/bibliography" target="_blank"><strong>Faculty Bibliography</strong></a>: a new initiative to provide an indexed and searchable interface for accessing HLS Faculty scholarship. (PHP/JSON/Elasticsearch)</li>
-                <li><strong>Agresso</strong>: Internal Student Information System database administration as well as support of a custom API layer developed to expose the underlying database to numerous internal systems. (C#)</li>
-                <li>HELIOS: Internal portal that provides access to numerous campus resources for staff and faculty. (C#/ASP.NET) </li>
-              </ul>
-              <h5 class="minor-heading">Research Fellow, Trinity Fellows Academy, Royal Oak, MD</h5>
-              <p>2015-2016</p>
-              <p>As a Research Fellow at <a href="https://trinityfellowsacademy.org/" target="_blank">TFA</a>, I pursued self-guided research under the guidance of <a href="https://www.linkedin.com/in/symanstevens" target="_blank">Dr. Syman Stevens</a> and <a href="http://lauracookkenna.com/" target="_blank">Dr. Laura Cook-Kenna</a>. My focus was the anthropological role of play in human society and its applications in the development of videogames. I produced a written thesis and supporting essays published at the online videogame criticism journal <a href="https://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank">First Person Scholar</a> as well as the games and culture webzine <a href="http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/" target="_blank">Haywire Magaine</a>. Along with my own research, I served in a writing group with two other Fellows, providing significant feedback, brainstorming, and proofreading for their own research theses.</p>
-              <p>On a weekly basis I served as support staff for the <a href="https://www.ospreypoint.org/" target="_blank">Osprey Point Retreat and Convention Center</a>, learning to develop my hospitality and servant leadership skills under the General Manager, <a href="mailto:rvalentine@ospreypoint.org">Roger Valentine</a>. This work is a fully integrated part of TFA's <a href="http://trinityfellowsacademy.org/about-us/vision-values/" target="_blank">vision</a> for developing the character and attitude needed to truly be a great leader in any field. I also helped to provide this same hospitality and service to lecturers and guests visiting TFA, acted as Logistics Coordinator for three major weekend conferences that the TFA Fellows hosted, and oversaw all work shift scheduling for the year.</p>
-              <br>
-              <h5 class="minor-heading">Application Developer, InterSystems Corporation, Cambridge, MA</h5>
-              <p>2011-2015</p>
-              <p>At InterSystems I worked under <a href="https://www.linkedin.com/in/spead" target="_blank">Benjamin Spead</a> on the Application Services team, using ISC technology to develop and maintain tools for use within the company. Much of my day-to-day efforts were dedicated to supporting multiple mission-critical applications used throughout the company. My tasks ranged from triage and categorization of newly reported bugs to meeting with end users to develop specifications for requested features and enhancements.</p>
-              <p>Projects that I contributed to include InterSystems' change control and workflow management application, a facilities management ticketing and issue tracker, a Customer Relations Managment application, and a contractor directory and workflow manager.</p>
-              <p>I worked extensively with InterSystems technologies such as Caché , Ensemble, ObjectScript, Zen, and Caché Server Pages (CSP), as well as standard web development technologies such as HTML, JavaScript, and CSS for client-side functionality and DOM manipulation.</p>
-              <p>InterSystems' Change Control Record, a workflow and version control management application I helped develop during my time there, was named the best use of Perforce Helix in Medical Technology (for its use with <a href="http://www.intersystems.com/our-products/trakcare/trakcare-overview-2/" target="_blank">InterSystems TrakCare</a>) at the <a href="http://www.perforce.com/blog/160413/winners-2016-versionary-awards-are%E2%80%A6" target="_blank">2016 Versionary Awards</a>, presented during the <a href="https://www.perforce.com/conference/2016/home" target="_blank">Perforce MERGE conference</a>.</p>
-              <br>
-              <h5 class="minor-heading">Sweezy Research Fellow, Grove City College, Grove City, PA</h5>
-              <p>2009</p>
-              <p>As part of Grove City College's Sweezy Fellowship Research Experience for Undergraduates program, I worked with a team of three other students alongside <a href="https://www.rtvtk.org/~cgribble/" target="_blank">Dr. Christiaan Gribble</a> pursuing research in ray tracing. The project involved significant experience coding, both within a conventional UNIX environment and for specialized DSP hardware (<a href="https://en.wikipedia.org/wiki/Stream_Processors,_Inc" target="_blank">SPI's</a> Storm-I).</p>
-              <p>Our efforts saw the successful creation of a fully-functional ray tracing engine to facilite research in both fixed and floating-point environments, as well as a peer-reviewed paper published in the <i>Journal of Graphics, GPU, and Game Tools</i> and a poster at <i>ACM SIGGRAPH/Eurographics High Performance Graphics</i>. (See <a href="#portfolio">Portfolio</a>)</p>
-              <p>My personal contributions involved working on the fixed-point mathematics libraries needed to facilitate our work the the DSP, as well as contributions to the design and implementation of the core ray-tracing engine. I also contributed to the writing and editing of the JGT article.</p>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Application Developer, Harvard Law School, Cambridge, MA</h5>
+                <div class="collapse-body">
+                  <span>2016-Present</span>
+                  <span>At Harvard Law School I serve as part of the Business Solutions team within Internet Technology Services department. My role supports the planning, development, maintenance, and ongoing support of a stable of internal applications supporting major elements of the school's day-to-day operations. Here I work alongside other departments to ensure the systems provided support their business needs as a part of the greater HLS community.</span>
+                  <span>Specific responsibilities include:</span>
+                  <span class="list-item"><a href="https://hls.harvard.edu" target="_blank"><strong>hls.harvard.edu</strong></a>: Ongoing support and enhancement of the school's primary public website.  <strong>(Wordpress/PHP)</strong></span>
+                  <span class="list-item"><a href="https://hls.harvard.edu/faculty/bibliography" target="_blank"><strong>Faculty Bibliography</strong></a>: a new initiative to provide an indexed and searchable interface for accessing HLS Faculty scholarship. <strong>(PHP/JSON/Elasticsearch)</strong></span>
+                  <span class="list-item"><strong>Agresso</strong>: Internal Student Information System database administration as well as support of a custom API layer developed to expose the underlying database to numerous internal systems. <strong>(C#)</strong></span>
+                  <span class="list-item"><strong>HELIOS</strong>: Internal portal that provides access to numerous campus resources for staff and faculty. <strong>(C#/ASP.NET)</strong></span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Research Fellow, Trinity Fellows Academy, Royal Oak, MD</h5>
+                <div class="collapse-body">
+                  <span>2015-2016</span>
+                  <span>As a Research Fellow at <a href="https://trinityfellowsacademy.org/" target="_blank">TFA</a>, I pursued self-guided research under the guidance of <a href="https://www.linkedin.com/in/symanstevens" target="_blank">Dr. Syman Stevens</a> and <a href="http://lauracookkenna.com/" target="_blank">Dr. Laura Cook-Kenna</a>. My focus was the anthropological role of play in human society and its applications in the development of videogames. I produced a written thesis and supporting essays published at the online videogame criticism journal <a href="https://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank">First Person Scholar</a> as well as the games and culture webzine <a href="http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/" target="_blank">Haywire Magaine</a>. Along with my own research, I served in a writing group with two other Fellows, providing significant feedback, brainstorming, and proofreading for their own research theses.</span>
+                  <span>On a weekly basis I served as support staff for the <a href="https://www.ospreypoint.org/" target="_blank">Osprey Point Retreat and Convention Center</a>, learning to develop my hospitality and servant leadership skills under the General Manager, <a href="mailto:rvalentine@ospreypoint.org">Roger Valentine</a>. This work is a fully integrated part of TFA's <a href="http://trinityfellowsacademy.org/about-us/vision-values/" target="_blank">vision</a> for developing the character and attitude needed to truly be a great leader in any field. I also helped to provide this same hospitality and service to lecturers and guests visiting TFA, acted as Logistics Coordinator for three major weekend conferences that the TFA Fellows hosted, and oversaw all work shift scheduling for the year.</span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Application Developer, InterSystems Corporation, Cambridge, MA</h5>
+                <div class="collapse-body">
+                  <span>2011-2015</span>
+                  <span>At InterSystems I worked under <a href="https://www.linkedin.com/in/spead" target="_blank">Benjamin Spead</a> on the Application Services team, using ISC technology to develop and maintain tools for use within the company. Much of my day-to-day efforts were dedicated to supporting multiple mission-critical applications used throughout the company. My tasks ranged from triage and categorization of newly reported bugs to meeting with end users to develop specifications for requested features and enhancements.</span>
+                  <span>Projects that I contributed to include InterSystems' change control and workflow management application, a facilities management ticketing and issue tracker, a Customer Relations Managment application, and a contractor directory and workflow manager.</span>
+                  <span>I worked extensively with InterSystems technologies such as Caché , Ensemble, ObjectScript, Zen, and Caché Server Pages (CSP), as well as standard web development technologies such as HTML, JavaScript, and CSS for client-side functionality and DOM manipulation.</span>
+                  <span>InterSystems' Change Control Record, a workflow and version control management application I helped develop during my time there, was named the best use of Perforce Helix in Medical Technology (for its use with <a href="http://www.intersystems.com/our-products/trakcare/trakcare-overview-2/" target="_blank">InterSystems TrakCare</a>) at the <a href="http://www.perforce.com/blog/160413/winners-2016-versionary-awards-are%E2%80%A6" target="_blank">2016 Versionary Awards</a>, presented during the <a href="https://www.perforce.com/conference/2016/home" target="_blank">Perforce MERGE conference</a>.</span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Sweezy Research Fellow, Grove City College, Grove City, PA</h5>
+                <div class="collapse-body">
+                  <span>2009</span>
+                  <span>As part of Grove City College's Sweezy Fellowship Research Experience for Undergraduates program, I worked with a team of three other students alongside <a href="https://www.rtvtk.org/~cgribble/" target="_blank">Dr. Christiaan Gribble</a> pursuing research in ray tracing. The project involved significant experience coding, both within a conventional UNIX environment and for specialized DSP hardware (<a href="https://en.wikipedia.org/wiki/Stream_Processors,_Inc" target="_blank">SPI's</a> Storm-I).</span>
+                  <span>Our efforts saw the successful creation of a fully-functional ray tracing engine to facilite research in both fixed and floating-point environments, as well as a peer-reviewed paper published in the <i>Journal of Graphics, GPU, and Game Tools</i> and a poster at <i>ACM SIGGRAPH/Eurographics High Performance Graphics</i>. (See <a href="#portfolio">Portfolio</a>)</span>
+                  <span>My personal contributions involved working on the fixed-point mathematics libraries needed to facilitate our work the the DSP, as well as contributions to the design and implementation of the core ray-tracing engine. I also contributed to the writing and editing of the JGT article.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -99,69 +113,72 @@
           <h2 class="major-heading">Education</h2>
           <div class="no-scroll">
             <div class="viewport" id="education-text">
-              <h5 class="minor-heading">Trinity Fellows Academy, Royal Oak, MD</h5>
-              <p>2015-2016</p>
-              <p> Weekly rotation of guest lecturers speaking on a variety of topics such as psychology, theology, political philosophy, social justice, and environmental stewardship. The curriculum coordinated by <a href="https://www.linkedin.com/in/symanstevens" target="_blank">Dr. Syman Stevens</a>, and included a range of respected speakers such as Dr. Os Guiness, Andy and Catherine Crouch, and Curt Thompson. Each fellow was responsible for a year-long independent research project on a subject of their choosing, and a written thesis and multiple supporting essays. Parts of my writing have been published at <a href="http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank">First Person Scholar</a> (<a href="#portfolio">Portfolio</a>)</p>
-              <br>
-              <h5 class="minor-heading">Bachelor of Science in Computer Science, Grove City College, Grove City, PA</h5>
-              <p>2007-2011</p>
-              <p>ABET-accredited Computer Science department headed by <a href="http://www.gcc.edu/academics/SEM/computerscience/Pages/Faculty-Profiles.aspx?listid=16&listtype=Faculty&returl=http%3a%2f%2fwww.gcc.edu%3a80%2facademics%2fSEM%2fcomputerscience%2fPages%2fFaculty-.aspx" target="_blank">Dr. William Birmingham</a>. Advised by <a href="http://www.rtvtk.org/~cgribble/">Dr. Christiaan Gribble</a>. In addition to classes required for graduation, I pursued additional mathematics classes (Linear Algebra, Statistics Theory), summer research in mathematics and computer graphics (also under Dr. Gribble) <a href="https://www.cs.unc.edu/~jheinly/publications/jgt2009-heinly.pdf" target="_blank">published</a> in the <i>Journal of Graphics, GPU, and Game Tools</i>. In addition to my Computer Science and math classes, I studied electives such as Technical Management, Creative Writing, and Fantasy Literature.</p>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Trinity Fellows Academy, Royal Oak, MD</h5>
+                <div class="collapse-body">
+                  <span>2015-2016</span>
+                  <span> Weekly rotation of guest lecturers speaking on a variety of topics such as psychology, theology, political philosophy, social justice, and environmental stewardship. The curriculum coordinated by <a href="https://www.linkedin.com/in/symanstevens" target="_blank">Dr. Syman Stevens</a>, and included a range of respected speakers such as Dr. Os Guiness, Andy and Catherine Crouch, and Curt Thompson. Each fellow was responsible for a year-long independent research project on a subject of their choosing, and a written thesis and multiple supporting essays. Parts of my writing have been published at <a href="http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank">First Person Scholar</a> (<a href="#portfolio">Portfolio</a>)</span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Bachelor of Science in Computer Science, Grove City College, Grove City, PA</h5>
+                <div class="collapse-body">
+                  <span>2007-2011</p>
+                  <span>ABET-accredited Computer Science department headed by <a href="http://www.gcc.edu/academics/SEM/computerscience/Pages/Faculty-Profiles.aspx?listid=16&listtype=Faculty&returl=http%3a%2f%2fwww.gcc.edu%3a80%2facademics%2fSEM%2fcomputerscience%2fPages%2fFaculty-.aspx" target="_blank">Dr. William Birmingham</a>. Advised by <a href="http://www.rtvtk.org/~cgribble/">Dr. Christiaan Gribble</a>. In addition to classes required for graduation, I pursued additional mathematics classes (Linear Algebra, Statistics Theory), summer research in mathematics and computer graphics (also under Dr. Gribble) <a href="https://www.cs.unc.edu/~jheinly/publications/jgt2009-heinly.pdf" target="_blank">published</a> in the <i>Journal of Graphics, GPU, and Game Tools</i>. In addition to my Computer Science and math classes, I studied electives such as Technical Management, Creative Writing, and Fantasy Literature.</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Portfolio -->
         <div class="content-panel" id="portfolio" style="display: none;">
-          <div class="jumbotron text-left container-fluid">
+          <div>
             <h2 class="major-heading">Portfolio (<a href="feed.xml">RSS</a>)</h2>
           </div>
           <div class="no-scroll">
             <div class=" viewport" id="portfolio-text">
               <div class="collapse">
-                <h5 class="minor-heading collapse-heading">Games Writing</h5>
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Games Writing</h5>
                 <div class="collapse-body">
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-hashtag-the-world/" target="_blank"><p>Playing For Real: Hashtag the World | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-freedom-of-choice/" target="_blank"><p>Playing For Real: Freedom of Choice | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-a-tale-of-two-calamities/" target="_blank"><p>Playing For Real: A Tale of Two Calamities | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-cheap-as-free/" target="_blank"><p>Playing For Real: Cheap As Free | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-not-with-a-bang-but-a-winter/" target="_blank"><p>Playing For Real: Not With a Bang but a Winter | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/slaying-dragons/" target="_blank"><p>Playing For Real: Slaying Dragons | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-holding-out-for-a-hero/" target="_blank"><p>Playing For Real: Holding Out for a Hero | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-play-as-you-like/" target="_blank"><p>Playing For Real: Play As You Like | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-gotta-glitch-em-all/" target="_blank"><p>Playing For Real: Gotta Glitch 'Em All | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-reality-augmented/" target="_blank"><p>Playing For Real: Reality, Augmented | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.firstpersonscholar.com/free-to-be-useless/" target="_blank"><p>Free to be Useless | <i>First Person Scholar</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-the-content-factory/" target="_blank"><p>Playing For Real: The Content Factory | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/" target="_blank"><p>Playing For Real: Let There Be Play | <i>Haywire Magazine</i></p></a>
-                  <a href="http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank"><p>Book Review: <i>Beyond Choices</i> | <i>First Person Scholar</i></p></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-hashtag-the-world/" target="_blank">Playing For Real: Hashtag the World | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-freedom-of-choice/" target="_blank">Playing For Real: Freedom of Choice | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-a-tale-of-two-calamities/" target="_blank">Playing For Real: A Tale of Two Calamities | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-cheap-as-free/" target="_blank">Playing For Real: Cheap As Free | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-not-with-a-bang-but-a-winter/" target="_blank">Playing For Real: Not With a Bang but a Winter | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/slaying-dragons/" target="_blank">Playing For Real: Slaying Dragons | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-holding-out-for-a-hero/" target="_blank">Playing For Real: Holding Out for a Hero | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-play-as-you-like/" target="_blank">Playing For Real: Play As You Like | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-gotta-glitch-em-all/" target="_blank">Playing For Real: Gotta Glitch 'Em All | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-reality-augmented/" target="_blank">Playing For Real: Reality, Augmented | <i>Haywire Magazine</i></a>
+                  <a href="http://www.firstpersonscholar.com/free-to-be-useless/" target="_blank">Free to be Useless | <i>First Person Scholar</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-the-content-factory/" target="_blank">Playing For Real: The Content Factory | <i>Haywire Magazine</i></a>
+                  <a href="http://www.haywiremag.com/columns/playing-for-real-let-there-be-play/" target="_blank">Playing For Real: Let There Be Play | <i>Haywire Magazine</i></a>
+                  <a href="http://www.firstpersonscholar.com/a-review-of-miguel-sicarts-beyond-choices/" target="_blank">Book Review: <i>Beyond Choices</i> | <i>First Person Scholar</i></a>
                 </div>
               </div>
-              <br>
               <div class="collapse">
-                <h5 class="minor-heading collapse-heading">Trinity Fellows Academy Blog Posts</h5>
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Trinity Fellows Academy Blog Posts</h5>
                 <div class="collapse-body">
-                  <a href="http://trinityfellowsacademy.org/2015/09/14/finding-peace-and-discovering-strengths-week-3/" target="_blank"><p>Strengths and Silence | Week 3</p></a>
-                  <a href="http://trinityfellowsacademy.org/2015/12/24/light-in-the-darkness-weeks-16-17/" target="_blank"><p>Light in the Darkness | Weeks 16 and 17</p></a>
-                  <a href="http://trinityfellowsacademy.org/2016/03/28/filled-not-emptied-week-31/" target="_blank"><p>Filled, Not Emptied | Week 31</p></a>
+                  <a href="http://trinityfellowsacademy.org/2015/09/14/finding-peace-and-discovering-strengths-week-3/" target="_blank">Strengths and Silence | Week 3</a>
+                  <a href="http://trinityfellowsacademy.org/2015/12/24/light-in-the-darkness-weeks-16-17/" target="_blank">Light in the Darkness | Weeks 16 and 17</a>
+                  <a href="http://trinityfellowsacademy.org/2016/03/28/filled-not-emptied-week-31/" target="_blank">Filled, Not Emptied | Week 31</a>
                 </div>
               </div>
-              <br>
               <div class="collapse">
-                <h5 class="minor-heading collapse-heading">Research Publications</h5>
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Research Publications</h5>
                 <div class="collapse-body">
-                  <a href="https://www.cs.unc.edu/~jheinly/publications/jgt2009-heinly.pdf" target="_blank"><p>Integer Ray Tracing | <i>Journal of Graphics, GPU, and Game Tools, vol. 14, no. 4</i>, 2009</p></a>
-                  <a href="http://www.rtvtk.org/~cgribble/research/papers/bensema10toward_poster.pdf" target="_blank"><p>Toward Stream Filtered Ray Tracing on a DSP | Poster, <i>ACM SIGGRAPH/Eurographics High Performance Graphics</i>, June 2010</p></a>
+                  <a href="https://www.cs.unc.edu/~jheinly/publications/jgt2009-heinly.pdf" target="_blank">Integer Ray Tracing | <i>Journal of Graphics, GPU, and Game Tools, vol. 14, no. 4</i>, 2009</a>
+                  <a href="http://www.rtvtk.org/~cgribble/research/papers/bensema10toward_poster.pdf" target="_blank">Toward Stream Filtered Ray Tracing on a DSP | Poster, <i>ACM SIGGRAPH/Eurographics High Performance Graphics</i>, June 2010</a>
                 </div>
               </div>
-              <br>
               <div class="collapse">
-                <h5 class="minor-heading collapse-heading">Software Projects</h5>
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Software Projects</h5>
                 <div class="collapse-body">
-                  <a href="http://www.rtvtk.org/~cgribble/research/tangere/" target="_blank"><p>Tangere Integer Ray Tracer</p></a>
+                  <a href="http://www.rtvtk.org/~cgribble/research/tangere/" target="_blank">Tangere Integer Ray Tracer</a>
+                  <span>This site by Jesse M. Porch. Valid <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.jmporch.com%2F" target="_blank">HTML</a> and <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.jmporch.com%2Fstyle.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a>.</span>
                 </div>
               </div>
-              <br>
-              <p>All code by Jesse M. Porch. Valid <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.jmporch.com%2F" target="_blank">HTML</a> and <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.jmporch.com%2Fstyle.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS</a>.</p>
             </div>
           </div>
         </div>
@@ -171,24 +188,43 @@
           <h2 class="major-heading">Hobbies</h2>
           <div class="no-scroll">
             <div class="viewport" id="hobbies-text">
-              <h5 class="minor-heading">Videogames</h5>
-              <p>Playing videogames is more than just a hobby for me. They've always been one of my primary means of relaxing, and many of my best friendships have been people I played games with. To me, this is one of the most important elements of gaming as a hobby: how does playing a game help me grow and better connect to the people that matter in my life?</p>
-              <p>My gaming interests are focused mostly on interactive storytelling and game communities. RPGs will always have a special place in my heart, particularly the Fallout and Final Fantasy series. I've been involved in several MMOs, including World of Warcraft, running a small guild in Guild Wars 2, and acting as Director for a player corporation focusing on Null Sec industry and production in EVE Online. I've also been an avid fan of Niantic Labs' Ingress in the Boston are, joining the local Eastern Massachusetts Resistance on a variety of operations and meetups.</p>
-              <br>
-              <h5 class="minor-heading">Role Playing and Board Games</h5>
-              <p>Given my love of storytelling and passion for gaming community, it's no surprise that I make time in my life for tabletop games in addition to videogames. In college I was active in the local gaming club, participating in and running sessions of various editions of Dungeons and Dragons (3.5 and Pathfinder), as well as assorted White Wolf Storyteller systems (Exalted, New World of Darkness). I've actively played numerous card and board games, recently focusing on Android: Netrunner. While my post-college roleplay has been limited, I have run a D&D 5th edition campaign and participated in several one-shots.</p>
-              <br>
-              <h5 class="minor-heading">Game Studies</h5>
-              <p>My work with game studies combines my passion for the medium with my academic leanings. I've read extensively within the discipline, from academic authors such as Bogost and Sicart, to more popular ones such as Koster and de Koven. My studies have also led me into related fields like anthropology and media theory. My particular area of interest is in the cultural role of play and its various manifestation, and how that insight can be applied to produce more engaging videogames. I'm also interested in new ways of modeling complex human phenomena such as ethics and relationships within games.</p>
-              <br>
-              <h5 class="minor-heading">Fantasy Literature</h5>
-              <p>From classics like J.R.R. Tolkien and C.S. Lewis, to contemporary authors like Brandon Sanderson and Patrick Rothfuss, I turn to fantasy literature for its focus on worldbuilding and strong character interaction. I take great pleasure in reading Sanderson's shared-universe stories and the depth to which he ponders the social and technological implications of the magic he describes. Of course, my first love will always be Tolkien's works for the way he weaves everything from creation myth to language, poetry, and song together into a cohesive whole. </p>
-              <br>
-              <h5 class="minor-heading">Poetry</h5>
-              <p>If my love of fantasy is based on the complex worldbuilding and sweeping story arcs, my love of poetry is the exact opposite. I revel in the clever subversion of a single phrase and the care with which a single word or punctuation mark is chosen. The beauty with which T.S. Eliot's <i>Four Quartets</i> delve into complex theology and philosophy, full of allusion, yet still speak to the emotions of the reader make it one of the greatest works I've ever read. </p>
-              <br>
-              <h5 class="minor-heading">Cooking</h5>
-              <p>My interest in food extends far beyond basic nutrition. Cooking is a way to gain an appreciation for the complexities that make up modern life. For instance, a commitment to regular cooking quickly teaches one how to balance variety and convenience. The social element of cooking and sharing meals is also quite important, and sitting down to share a homemade meal brings a group together in a way no restaurant can quite match. I especially enjoy trying out new spices and fresh fruits and vegetables, and having worked in a professional kitchen I find it far more pleasant to throw together something for a quiet meal among friends. </p>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Videogames</h5>
+                <div class="collapse-body">
+                  <span>Playing videogames is more than just a hobby for me. They've always been one of my primary means of relaxing, and many of my best friendships have been people I played games with. To me, this is one of the most important elements of gaming as a hobby: how does playing a game help me grow and better connect to the people that matter in my life?</span>
+                  <span>My gaming interests are focused mostly on interactive storytelling and game communities. RPGs will always have a special place in my heart, particularly the Fallout and Final Fantasy series. I've been involved in several MMOs, including World of Warcraft, running a small guild in Guild Wars 2, and acting as Director for a player corporation focusing on Null Sec industry and production in EVE Online. I've also been an avid fan of Niantic Labs' Ingress in the Boston area, joining the local Eastern Massachusetts Resistance on a variety of operations and meetups.</span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Role Playing and Board Games</h5>
+                <div class="collapse-body">
+                  <span>Given my love of storytelling and passion for gaming community, it's no surprise that I make time in my life for tabletop games in addition to videogames. In college I was active in the local gaming club, participating in and running sessions of various editions of Dungeons and Dragons (3.5 and Pathfinder), as well as assorted White Wolf Storyteller systems (Exalted, New World of Darkness). I've actively played numerous card and board games, recently focusing on Android: Netrunner. While my post-college roleplay has been limited, I have run a D&D 5th edition campaign and participated in several one-shots.</span>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Game Studies</h5>
+                <div class="collapse-body">
+                  <p>My work with game studies combines my passion for the medium with my academic leanings. I've read extensively within the discipline, from academic authors such as Bogost and Sicart, to more popular ones such as Koster and de Koven. My studies have also led me into related fields like anthropology and media theory. My particular area of interest is in the cultural role of play and its various manifestation, and how that insight can be applied to produce more engaging videogames. I'm also interested in new ways of modeling complex human phenomena such as ethics and relationships within games.</p>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Fantasy Literature</h5>
+                <div class="collapse-body">
+                  <p>From classics like J.R.R. Tolkien and C.S. Lewis, to contemporary authors like Brandon Sanderson and Patrick Rothfuss, I turn to fantasy literature for its focus on worldbuilding and strong character interaction. I take great pleasure in reading Sanderson's shared-universe stories and the depth to which he ponders the social and technological implications of the magic he describes. Of course, my first love will always be Tolkien's works for the way he weaves everything from creation myth to language, poetry, and song together into a cohesive whole. </p>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Poetry</h5>
+                <div class="collapse-body">
+                  <p>If my love of fantasy is based on the complex worldbuilding and sweeping story arcs, my love of poetry is the exact opposite. I revel in the clever subversion of a single phrase and the care with which a single word or punctuation mark is chosen. The beauty with which T.S. Eliot's <i>Four Quartets</i> delve into complex theology and philosophy, full of allusion, yet still speak to the emotions of the reader make it one of the greatest works I've ever read. </p>
+                </div>
+              </div>
+              <div class="collapse">
+                <h5 class="minor-heading collapse-heading"><i class="fa fa-minus-square-o" aria-hidden="true"></i>Cooking</h5>
+                <div class="collapse-body">
+                  <p>My interest in food extends far beyond basic nutrition. Cooking is a way to gain an appreciation for the complexities that make up modern life. For instance, a commitment to regular cooking quickly teaches one how to balance variety and convenience. The social element of cooking and sharing meals is also quite important, and sitting down to share a homemade meal brings a group together in a way no restaurant can quite match. I especially enjoy trying out new spices and fresh fruits and vegetables, and having worked in a professional kitchen I find it far more pleasant to throw together something for a quiet meal among friends. </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

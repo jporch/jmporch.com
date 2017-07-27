@@ -10,8 +10,9 @@ $(document).ready(function() {
   $(window).on('hashchange', function() {
     dispTab();
   });
-  $('.collapse').click(function() {
-    $(this).children('.collapse-body').slideToggle(400);
+  $('.collapse-heading').click(function() {
+    toggleIcon($(this).children('i'));
+    $(this).next('.collapse-body').slideToggle(400);
   });
   newPage();
 });
@@ -27,6 +28,14 @@ function toggleSidebar(speed=400) {
   if (isMobile()){
     $(".sidebar-nav").slideToggle(speed);
     $(".no-scroll").slideToggle(speed);
+  }
+}
+
+function toggleIcon(element) {
+  if (element.hasClass('fa-plus-square-o')){
+    element.removeClass('fa-plus-square-o').addClass('fa-minus-square-o');
+  } else {
+    element.removeClass('fa-minus-square-o').addClass('fa-plus-square-o');
   }
 }
 
