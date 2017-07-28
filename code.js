@@ -4,8 +4,10 @@ $(document).ready(function() {
   $(".sidebar-header").click(function(){
     toggleSidebar();
   })
-  $('.sidebar-buttons').children().click(function() {
+  $('.sidebar-buttons').children().click(function(event) {
     window.location.hash = $(this).attr('class');
+    event.preventDefault();
+    toggleSidebar();
   });
   $(window).on('hashchange', function() {
     dispTab();
@@ -44,10 +46,10 @@ function clearPage() {
 };
 
 function newPage() {
-  dispTab(false);
+  dispTab();
 };
 
-function dispTab(minimizeNav=true) {
+function dispTab() {
   clearPage();
   var hash = window.location.hash;
   if (!(['#about','#work','#education','#portfolio','#hobbies'].includes(hash))) {
@@ -59,8 +61,5 @@ function dispTab(minimizeNav=true) {
     $(hash+'-text').scrollTop(0);
   } else {
     window.scrollTo(0,0);
-    if(minimizeNav) {
-      toggleSidebar();
-    }
   }
 }
