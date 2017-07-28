@@ -1,61 +1,65 @@
+var $ = jQuery;
+
+$(document).ready(function() {
+  $(".sidebar-header").click(function(){
+    toggleSidebar();
+  })
+  $('.sidebar-buttons').children().click(function(event) {
+    window.location.hash = $(this).attr('class');
+    event.preventDefault();
+    toggleSidebar();
+  });
+  $(window).on('hashchange', function() {
+    dispTab();
+  });
+  $('.collapse-heading').click(function() {
+    toggleIcon($(this).children('i'));
+    $(this).next('.collapse-body').slideToggle(400);
+  });
+  newPage();
+});
+
+function isMobile() {
+  return window.matchMedia("screen and (max-width: 640px)").matches;
+}
+function isDesktop() {
+  return window.matchMedia("screen and (min-width: 641px)").matches;
+}
+
+function toggleSidebar(speed=400) {
+  if (isMobile()){
+    $(".sidebar-nav").slideToggle(speed);
+    $(".no-scroll").slideToggle(speed);
+  }
+}
+
+function toggleIcon(element) {
+  if (element.hasClass('fa-plus-square-o')){
+    element.removeClass('fa-plus-square-o').addClass('fa-minus-square-o');
+  } else {
+    element.removeClass('fa-minus-square-o').addClass('fa-plus-square-o');
+  }
+}
+
 function clearPage() {
-  $('div#about').hide();
-  $('div#work').hide();
-  $('div#education').hide();
-  $('div#portfolio').hide();
-  $('div#hobbies').hide();
+  $('.content-panel').hide();
 };
 
 function newPage() {
-  var hash = window.location.hash;	
-  switch(hash.toString()) {
-    case '#about':
-      dispAbout();
-      break;
-    case '#work':
-      dispWork();
-      break;
-    case '#education':
-      dispEducation();
-      break;
-    case '#portfolio':
-      dispPortfolio();
-      break;
-	case '#hobbies':
-      dispHobbies();
-      break;
-    default:
-      dispAbout();
-      break;
-	}
+  dispTab();
 };
 
-function dispAbout() {
+function dispTab() {
   clearPage();
-  $('div#about').fadeIn(400);
-  $('div#about-text').scrollTop(0);
-};
+  var hash = window.location.hash;
+  if (!(['#about','#work','#education','#portfolio','#hobbies'].includes(hash))) {
+    hash = '#about';
+  }
 
-function dispWork() {
-  clearPage();
-  $('div#work').fadeIn(400);
-  $('div#work-text').scrollTop(0);  
-};
-
-function dispEducation() {
-  clearPage();
-  $('div#education').fadeIn(400);
-  $('div#education-text').scrollTop(0);
-};
-
-function dispPortfolio() {
-  clearPage();
-  $('div#portfolio').fadeIn(400);
-  $('div#portfolio-text').scrollTop(0);
-};
-
-function dispHobbies() {
-  clearPage();
-  $('div#hobbies').fadeIn(400);
-  $('div#hobbies-text').scrollTop(0);
-};
+  $(hash).fadeIn(400);
+  if (isDesktop()) {
+    $(hash+'-text').scrollTop(0);
+  } else {
+    window.scrollTo(0,0);
+  }
+}
