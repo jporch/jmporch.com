@@ -101,6 +101,7 @@ a:visited {
 .collapse-heading {
   padding-top: 2px;
   padding-left: 2px;
+  cursor: pointer;
 }
 .collapse-heading > i {
   padding-right: .5em;
@@ -184,6 +185,11 @@ a:visited {
   }
 }
 /* End Desktop Layout */
+@media screen and (min-width: 1200px) {
+  #about-text {
+    font-size: 110%;
+  }
+}
 
 /* Mobile Layout */
 @media screen and (max-width: 640px) {
