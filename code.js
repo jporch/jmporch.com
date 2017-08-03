@@ -1,5 +1,4 @@
 var $ = jQuery;
-
 $(document).ready(function() {
   $(".sidebar-header").click(function(){
     toggleSidebar();
@@ -46,17 +45,17 @@ function clearPage() {
 };
 
 function newPage() {
-  dispTab();
+  dispTab(0);
 };
 
-function dispTab() {
+function dispTab(speed=400) {
   clearPage();
   var hash = window.location.hash;
   if (!(['#about','#work','#education','#portfolio','#hobbies'].includes(hash))) {
     hash = '#about';
   }
 
-  $(hash).fadeIn(400);
+  $(hash).fadeIn(speed);
   if (isDesktop()) {
     $(hash+'-text').scrollTop(0);
   } else {
