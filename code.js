@@ -12,7 +12,7 @@ $(document).ready(function() {
     dispTab();
   });
   $('.collapse-heading').click(function() {
-    toggleIcon($(this).children('i'));
+    toggleIcon($(this).children('span')[0]);
     $(this).next('.collapse-body').slideToggle(400);
   });
   newPage();
@@ -33,11 +33,8 @@ function toggleSidebar(speed=400) {
 }
 
 function toggleIcon(element) {
-  if (element.hasClass('fa-plus-square-o')){
-    element.removeClass('fa-plus-square-o').addClass('fa-minus-square-o');
-  } else {
-    element.removeClass('fa-minus-square-o').addClass('fa-plus-square-o');
-  }
+  element.classList.toggle('minus-icon');
+  element.classList.toggle('plus-icon');
 }
 
 function clearPage() {

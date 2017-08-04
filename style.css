@@ -103,8 +103,16 @@ a:visited {
   padding-left: 2px;
   cursor: pointer;
 }
-.collapse-heading > i {
-  padding-right: .5em;
+.collapse-heading > span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+.minus-icon {
+  background-image: url(content/minus_icon.png);
+}
+.plus-icon {
+  background-image: url(content/plus_icon.png);
 }
 .collapse-body {
 }
