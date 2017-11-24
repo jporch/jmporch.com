@@ -7,6 +7,13 @@
   <atom:link href="http://www.jmporch.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Assorted words on videogames, play, and whatever else I'm thinking about at the time.</description>
   <item>
+    <title>Musings | Thoughts on Nowhere Prophet</title>
+    <link>http://www.jmporch.com/musings/nowhere-prophet.htm</link>
+    <guid>http://www.jmporch.com/musings/nowhere-prophet.htm</guid>
+    <description>Brief musings on the game Nowhere Prophet, and why being a "roguelike deck-builder" helps it successfully stand apart from the dozens of "hearthstonelikes" that clearly inspire it.</description>
+    <pubDate>Fir, 24 Now 2017 20:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Let There Be Play | Sweatin' Pixels</title>
     <link>http://www.haywiremag.com/columns/playing-for-real-sweatin-pixels/</link>
     <guid>http://www.haywiremag.com/columns/playing-for-real-sweatin-pixels/</guid>
