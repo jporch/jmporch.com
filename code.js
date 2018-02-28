@@ -9,6 +9,11 @@ $(document).ready(function() {
     toggleSidebar();
   });
   $(window).on('hashchange', function() {
+    // Handles skipping navbar for accessibility
+    if (window.location.hash == '#content') {
+      history.replaceState(null,null,window.location.href.split("#")[0]);
+      return;
+    }
     dispTab();
   });
   $('.collapse-heading').click(function() {

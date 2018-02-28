@@ -7,11 +7,18 @@
   <atom:link href="http://www.jmporch.com/feed.xml" rel="self" type="application/rss+xml" />
   <description>Assorted words on videogames, play, and whatever else I'm thinking about at the time.</description>
   <item>
-    <title>Musings | Thoughts on Nowhere Prophet</title>
-    <link>http://www.jmporch.com/musings/nowhere-prophet.htm</link>
-    <guid>http://www.jmporch.com/musings/nowhere-prophet.htm</guid>
-    <description>Brief musings on the game Nowhere Prophet, and why being a "roguelike deck-builder" helps it successfully stand apart from the dozens of "hearthstonelikes" that clearly inspire it.</description>
-    <pubDate>Fir, 24 Now 2017 20:00:00 +0000</pubDate>
+    <title>Let There Be Play | Decks to Dust</title>
+    <link>http://www.haywiremag.com/columns/playing-for-real-decks-to-dust/</link>
+    <guid>http://www.haywiremag.com/columns/playing-for-real-decks-to-dust/</guid>
+    <description>A bonus issue of my column examining videogames as "play." This one ponders how digital card game Nowhere Prophet embraces the "mortality" of its cards, unifying narrative, theme, and mechanics in a powerful way.</description>
+    <pubDate>Sun, 25 Feb 2018 20:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Christ and Pop Culture |Sheathing the Sword: Akira Kurosawa and the Virtue of Meekness</title>
+    <link>https://christandpopculture.com/sheathing-sword-akira-kurosawa-virtue-meekness/</link>
+    <guid>https://christandpopculture.com/sheathing-sword-akira-kurosawa-virtue-meekness/</guid>
+    <description>An in-depth meditation on the oft-misunderstood virtue of meekness, specifically as presented by the samurai films of Akira Kurosawa. Toshiro Mifune, playing the title role in Sanjuro, is called a "sword without a sheath" for his inclination toward violence, and the movie presents a vision of violence as a sword kept safely in its sheath. Christians, however, look forward to a deeper kind of peace where the swords themselves are beaten to plowshares, turning weapons of war into tools of nurturing. Featured article at Christ and Pop Culture, January 2018 issue.</description>
+    <pubDate>Mon, 05 Feb 2018 20:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Let There Be Play | Sweatin' Pixels</title>
