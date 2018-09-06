@@ -1,8 +1,5 @@
 var $ = jQuery;
 $(document).ready(function() {
-  $(".sidebar-header").click(function(){
-    toggleSidebar();
-  })
   $('.sidebar-buttons').children().click(function(event) {
     window.location.hash = $(this).attr('class');
     event.preventDefault();
@@ -22,25 +19,6 @@ $(document).ready(function() {
   });
   newPage();
 });
-
-function isMobile() {
-  return window.matchMedia("screen and (max-width: 640px)").matches;
-}
-function isDesktop() {
-  return window.matchMedia("screen and (min-width: 641px)").matches;
-}
-
-function toggleSidebar(speed=400) {
-  if (isMobile()){
-    $(".sidebar-nav").slideToggle(speed);
-    $(".no-scroll").slideToggle(speed);
-  }
-}
-
-function toggleIcon(element) {
-  element.classList.toggle('minus-icon');
-  element.classList.toggle('plus-icon');
-}
 
 function clearPage() {
   $('.content-panel').hide();
