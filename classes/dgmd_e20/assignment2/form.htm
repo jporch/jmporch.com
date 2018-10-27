@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jesse M. Porch | Application Developer, Writer | Boston, MA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="skip-nav">
+    <a href="#content">Skip to content</a>
+    </div>
+    <nav>
+      <h1>Branden Sanderson's Writings</h1>
+      <ul>
+          <li><a href="default.htm">The Cosmere</a></li>
+          <li><a href="mistborn.htm">Mistborn Trilogy</a></li>
+          <li><a href="stormlight.htm">The Stormlight Archive</a></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><a href="form.htm">Comment Box</a></li>
+      </ul>
+    </nav>
+    <main id="content" aria-labelledby="content-heading">
+      <h1 id="content-heading">Thoughts and Comments</h1>
+      <form action="/dev/null" method="post">
+        <label for="sender">Your Name:</label>
+        <input id="sender" name="sender" type="text">
+        <label for="reply">Your Email Address:</label>
+        <input id="reply" name="reply" type="email">
+        <label for="number">Your Phone Number:</label>
+        <input id="number" name="number" type="tel">
+        <label for="text">Your Message:</label>
+        <textarea id="text" name="text" placeholder="Your message here..."></textarea>
+        <button type="submit">Send!</button>
+        <button type="reset">Discard...</button>
+      </form>
+    </main>
+    <div id="copyright-notice">Images are from <a href="https://picsum.photos/" title="link to image placeholder website Lorem Picsum">Lorem Picsum</a>. All other content copyright Jesse M. Porch, 2018.</div>  </body>
+</html>
