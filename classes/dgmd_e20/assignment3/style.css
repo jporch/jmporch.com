@@ -29,7 +29,7 @@ a:visited {
   top: -24px;
 }
 #skip-nav a:focus {
-  transition: top .1s ease-in, background .5s linear;
+  transition: top .1s ease-in .5s;
   top: 0px;
 }
 
@@ -100,7 +100,7 @@ main {
 main > h1 {
   font-size: 22pt;
   width: calc(77vw - 20px);
-  background: linear-gradient(rgb(220,220,220,1) 75%,rgb(238,238,238,0));
+  background: linear-gradient(rgb(220,220,220) 75%,transparent);
   position: fixed;
   padding: .3em;
   margin: 0;

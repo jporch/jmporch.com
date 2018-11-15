@@ -1,69 +1,70 @@
-1.  Provide a link to the first page of your website: https://jmporch.com/classes/dgmd_e20/assignment2/default.htm
+DGMD E-20 Assignment 3
+
+Your name: Jesse Porch
+
+1. Provide a link to the first page of your website: https://jmporch.com/classes/dgmd_e20/assignment3/animation.htm
+
 My site looks the way I want on (choose one): PC
-With this browser (choose one): Chrome
+
+With this browser (choose one): Chrome 
 
 
-FLOATS & POSITIONING (40% of grade)
+TRANSITIONS & TRANSFORMS (25% of grade)
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
-2.  My standard navigation bar linking pages together: 
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (Line 15)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 38)
-3.  Two floats and clears:
-    https://jmporch.com/classes/dgmd_e20/assignment2/mistborn.htm (lines 30, 32)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (lines 124, 129)  
-4.  One positioning (absolute, relative, fixed):
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 28)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 104)
-5.  Correct use of CSS3 columns:
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 30)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (lines 114, 118)
-6.  Column layout example:
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (lines 15, 27)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (lines 38, 86)
 
+2a. Instance #1 of transforms: 
+https://jmporch.com/classes/dgmd_e20/assignment3/mistborn.htm (Line 30)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 128)
 
-STYLING WITH CSS3 (10% of grade)
-State which technique you used, and provide URL(s) and starting line number(s) for HTML and CSS for each item.
-7.  Technique 1: Web Fonts 
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 9)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 9)
-8.  Technique 2: Rounded Corners
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 15)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 42)
-9.  Technique 3: Gradients
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 28)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 103)
+2b. Instance #2 of transforms:
+https://jmporch.com/classes/dgmd_e20/assignment3/stormlight.htm (Line 40)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 163)
 
+3a. Instance #1 of transition, which is associated with a transform:
+https://jmporch.com/classes/dgmd_e20/assignment3/stormlight.htm (Line 40)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 165)
 
-FORM (25% of grade)
+3b. Instance #2 of transition:
+https://jmporch.com/classes/dgmd_e20/assignment3/stormlight.htm (Line 12)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 32)
+
+CSS ANIMATION (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item. 
+
+For the animation with at least 4 keyframes:
+4. Keyframes start on this CSS line number:
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 188)
+
+5a. First property that changes through the 4 keyframes:
+stroke
+
+5b. Second property that changes through the 4 keyframes:
+opacity
+
+6. This animation is activated on (choose one):  
+page load
+
+SVG PLUS ANIMATION (25% of grade)
+
+7. Indicate where the SVG starts (separate file or starting HTML line number):
+https://jmporch.com/classes/dgmd_e20/assignment3/animation.htm (Line 30) 
+
+8. Attribution for SVG, or indicate that you created it yourself:
+3D Box SVG, by Adrien Coquet from the Noun Project. (https://thenounproject.com/browse/?i=2007250)
+
+9a. SVG animation keyframe location (starting CSS line number):
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 188)
+
+9b. URL location of the SVG animation:
+https://jmporch.com/classes/dgmd_e20/assignment3/animation.htm
+
+CSS FILTERS (25% of grade) 
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
-10.  Indicate the URL and HTML line number where the form starts. We will look for 4 fields of information and a submit button.
-    https://jmporch.com/classes/dgmd_e20/assignment2/form.htm (line 26)
-    https://jmporch.com/classes/dgmd_e20/assignment2/style.css (line 156)
-11.  List 4 form input types included in your form, with line number in HTML.
-    Text: https://jmporch.com/classes/dgmd_e20/assignment2/form.htm (line 28)
-    Email: https://jmporch.com/classes/dgmd_e20/assignment2/form.htm (line 30)
-    Tel: https://jmporch.com/classes/dgmd_e20/assignment2/form.htm (line 32)
-    Textarea: https://jmporch.com/classes/dgmd_e20/assignment2/form.htm (line 34)
-12.  We will evaluate appropriateness of the input field type chosen for the type of data collected. (Nothing to submit here.)
 
+10a. CSS filter #1, which was transitioned/animated:
+https://jmporch.com/classes/dgmd_e20/assignment3/mistborn.htm (Line 30)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 135)
 
-ACCESSIBILITY (25% of grade)
-List the URL and starting HTML line number for each item. If you feel it's helpful, explain what you did to meet accessibility requirements for each item.
-13.  Headings and document structure (list the URL for the page that exemplifies this best. HTML line numbers not required)
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm
-14.  Hyperlinks
-    https://jmporch.com/classes/dgmd_e20/assignment2/mistborn.htm (lines 29, 44)
-15.  Bullets and numbered lists (include at least one type of list)
-    https://jmporch.com/classes/dgmd_e20/assignment2/mistborn.htm (line 37)
-16.  Color and contrast (indicate which contrast checker tool you used and the results of your final design)
-    Level Access Color Contrast Checker (https://www.levelaccess.com/compliance-resource/color-contrast-checker/)
-    Link to results: https://jmporch.com/classes/dgmd_e20/assignment2/images/color_contrast_assignment2.png
-17.  Image alt-text (include at least one image)
-    https://jmporch.com/classes/dgmd_e20/assignment2/mistborn.htm (line 30)
-18.  ARIA role, control, label, or state included on your site:
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 27)
-19.  Indicate the URL(s) and starting HTML line number(s) demonstrating your navigation best practices:
-    https://jmporch.com/classes/dgmd_e20/assignment2/default.htm (line 12)
-20.  Indicate the URL(s) and starting HTML line number for the table of information marked up for accessibility:
-    https://jmporch.com/classes/dgmd_e20/assignment2/stormlight.htm (line 30)
+10b. CSS filter #2:
+https://jmporch.com/classes/dgmd_e20/assignment3/stormlight.htm (Line 40)
+https://jmporch.com/classes/dgmd_e20/assignment3/style.css (Line 166)
