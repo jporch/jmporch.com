@@ -1,0 +1,88 @@
+.pull-right {
+  float: right;
+  clear: right;
+}
+
+/* Float Grid */
+.row {
+  margin-bottom: 1rem;
+  clear: left;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+*[class*="col-"] {
+  float: left;
+  margin-right: 2%;
+}
+div[class*="col-"] {
+  border: 2px solid black;
+  padding: .5em;
+}
+.col-1 {
+  width: 18%;
+}
+.col-2 {
+  width: 38%;
+}
+.col-3 {
+  width: 58%;
+}
+.col-4 {
+  width: 78%;
+}
+.col-5 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .shift-forward-1 {
+    position: relative;
+    left: 20%;
+  }
+  .shift-backward-1 {
+    position: relative;
+    left: -20%;
+  }
+}
+@media (max-width: 767px) {
+  .col-1 {
+    width: 48%;
+    margin-right:4%;
+  }
+  .col-1:nth-of-type(2n+1) {
+    margin-right: 0;
+  }
+  .col-2, .col-3, .col-4, .col-5 {
+    width: 100%;
+  }
+  .shift-forward-1 {
+    position: relative;
+    left: 52%;
+  }
+  .shift-backward-1 {
+    position: relative;
+    left: -52%;
+  }
+}
+@media (max-width: 320px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5 {
+    width: 100%;
+  }
+  .shift-forward-1 {
+    position: relative;
+    top: 9.5rem;
+    left: 0;
+  }
+  .shift-backward-1 {
+    position: relative;
+    top: -9.5rem;
+    left: 0;
+  }
+}
+/* End Float Grid */

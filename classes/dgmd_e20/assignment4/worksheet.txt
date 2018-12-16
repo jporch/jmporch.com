@@ -1,0 +1,58 @@
+DGMD E-20 Assignment 4
+
+Your name: Jesse M. Porch
+
+1. Provide a link to the first page of your website:
+
+My site looks the way I want on (choose one): PC
+
+With this browser (choose one): Chrome 
+
+
+PART 1 FLEXBOX and GRID GAMES
+2. Take a screenshot of the "winning" final screen in a Flexbox game AND the Grid game. Set these aside to include in your final submitted zip file. (TWO screenshots to submit)
+
+
+PART 2A FLEXBOX LAYOUT
+Provide URL(s) and starting line number(s) for HTML and CSS for each item. 
+
+3. URL for the page coded with Flexbox grid layout. In the CSS, include a comment for where the Flexbox grid layout starts.
+
+4. Number of columns used in your grid system:
+
+5. HTML and CSS line numbers for where  reordering occurs:
+
+
+PART 2B GRID LAYOUT
+7. URL for the page coded with Grid layout. In the CSS, include a comment for where the Grid layout starts.
+
+8. HTML and CSS line numbers for where  reordering occurs:
+
+9. HTML and CSS line numbers for where grid offset OR nested grid occurs:
+
+
+PART 2C FLOAT LAYOUT
+10. URL for the page coded with float layout. In the CSS, include a comment for where the float layout starts.
+https://jmporch.com/classes/dgmd_e20/assignment4/default.htm
+https://jmporch.com/classes/dgmd_e20/assignment4/float.css
+
+11. HTML and CSS line numbers for where  reordering occurs:
+https://jmporch.com/classes/dgmd_e20/assignment4/default.htm (line 68, 74)
+https://jmporch.com/classes/dgmd_e20/assignment4/float.css (line 39/43, 59/63, 72/77)
+
+12. HTML and CSS line numbers for where any JavaScript equal heights are included:
+N/A
+
+Cite the source for your JS code:
+
+
+PART 4: CSS LAYOUT PAPER
+If you have created a .DOC(X) file, PDF file, or a text file, zip it as part of your submission. 
+
+If you want to use Google Docs or similar online service, indicate a URL where we might find your paper:
+
+
+PART 5: WOW US (GRAD STUDENTS ONLY)
+Explain why we should be "wowed" by your assignment. Include any relevant HTML and CSS line numbers for us to examine.
+
+

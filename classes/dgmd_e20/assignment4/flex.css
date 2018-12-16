@@ -1,0 +1,42 @@
+.pull-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: flex-start;
+}
+
+div[class*="col-"] {
+  border: 2px solid black;
+  padding: .5em;
+  margin-right: 2%;
+}
+
+.col-1 {
+  width: 31%;
+}
+.col-2 {
+  width: 66%;
+}
+.col-3 {
+  width: 100%;
+}
+
+.pos-2 {
+    order: 2;
+  }
+.pos-3 {
+  order: 3;
+}
+
+@media (max-width: 767px) {
+  .col-1, .col-2, .col-3 {
+    width: 100%;
+  }
+}
