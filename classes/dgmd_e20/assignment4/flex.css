@@ -5,6 +5,7 @@
 
 .row {
   display: flex;
+  width: 100%;
   margin-bottom: 1rem;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,14 +16,22 @@
   margin-bottom: 0;
 }
 
+nav {
+  display: block;
+}
+
 div[class*="col-"] {
   border: 2px solid black;
   padding: .5em;
-  margin-right: 2%;
+}
+
+div.semi-row {
+  padding: 0;
+  border: 0;
 }
 
 .col-1 {
-  width: 31%;
+  width: 33%;
 }
 .col-2 {
   width: 66%;
@@ -38,8 +47,20 @@ div[class*="col-"] {
   order: 3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
+  .col-1, .col-2 {
+    width: 48%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
   .col-1, .col-2, .col-3 {
     width: 100%;
+  }
+  .order {
+    width: 48%;
   }
 }

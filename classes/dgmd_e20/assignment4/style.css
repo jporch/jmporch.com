@@ -50,12 +50,12 @@ nav a:hover {
   transition: background 250ms ease-out;
 }
 nav a, nav span {
-  display: inline-block;
   border-radius: 4px;
   padding: .25em .5em;
   margin: 0;
   color: rgb(35, 82, 124);
   text-decoration: none;
+  width: 6em;
 }
 /* End Navbar */
 
@@ -97,8 +97,42 @@ main ul {
   font-size: 12pt;
   margin-bottom: .5rem;
   text-align: center;
+  min-height: 9em;
 }
 /* End Content*/
+
+/* Responsive Background */
+@media (max-width: 400px) {
+  nav {
+    background-image:url(https://picsum.photos/400/300?image=234&blur);
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  nav {
+    background-image:url(https://picsum.photos/500/300?image=234&blur);
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  nav {
+    background-image:url(https://picsum.photos/600/300?image=234&blur);
+  }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+  nav {
+    background-image:url(https://picsum.photos/700/300?image=234&blur);
+  }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+  nav {
+    background-image:url(https://picsum.photos/800/300?image=234&blur);
+  }
+}
+@media (min-width: 801px) {
+  nav {
+    background-image:url(https://picsum.photos/1200/300?image=234&blur);
+  }
+}
+/* End Responsive Background */
 
 #copyright-notice {
   text-align: center;

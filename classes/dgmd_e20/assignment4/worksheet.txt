@@ -11,20 +11,29 @@ With this browser (choose one): Chrome
 
 PART 1 FLEXBOX and GRID GAMES
 2. Take a screenshot of the "winning" final screen in a Flexbox game AND the Grid game. Set these aside to include in your final submitted zip file. (TWO screenshots to submit)
-
+https://jmporch.com/classes/dgmd_e20/assignment4/FlexboxDefenseEndgame.png
+https://jmporch.com/classes/dgmd_e20/assignment4/GridGardenEndgame.png
 
 PART 2A FLEXBOX LAYOUT
 Provide URL(s) and starting line number(s) for HTML and CSS for each item. 
 
 3. URL for the page coded with Flexbox grid layout. In the CSS, include a comment for where the Flexbox grid layout starts.
+https://jmporch.com/classes/dgmd_e20/assignment4/flex.htm
+https://jmporch.com/classes/dgmd_e20/assignment4/flex.css
 
 4. Number of columns used in your grid system:
+3 main columns, with the col-2 subdivided into 3 smaller columns. This was done instead of using a 2-1-1-1 because flexbox doesn't cleanly allow an item to span multiple tracks like I wanted my sidebar to.
 
 5. HTML and CSS line numbers for where  reordering occurs:
+https://jmporch.com/classes/dgmd_e20/assignment4/flex.htm (line 68, 74)
+https://jmporch.com/classes/dgmd_e20/assignment4/flex.css (line 34, 37)
 
 
 PART 2B GRID LAYOUT
 7. URL for the page coded with Grid layout. In the CSS, include a comment for where the Grid layout starts.
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.htm
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.css
+
 
 8. HTML and CSS line numbers for where  reordering occurs:
 
@@ -43,7 +52,16 @@ https://jmporch.com/classes/dgmd_e20/assignment4/float.css (line 39/43, 59/63, 7
 12. HTML and CSS line numbers for where any JavaScript equal heights are included:
 N/A
 
-Cite the source for your JS code:
+PART 3: RESPONSIVE IMAGES
+13. Regular image that has responsive qualities:
+HTML line number where image is called:
+https://jmporch.com/classes/dgmd_e20/assignment4/default.htm (line 92)
+
+14. Background image that has responsive qualities:
+HTML line number where image is called:
+https://jmporch.com/classes/dgmd_e20/assignment4/default.htm (line 16)
+Corresponding CSS line number:
+https://jmporch.com/classes/dgmd_e20/assignment4/style.css (line 104)
 
 
 PART 4: CSS LAYOUT PAPER
@@ -54,5 +72,3 @@ If you want to use Google Docs or similar online service, indicate a URL where w
 
 PART 5: WOW US (GRAD STUDENTS ONLY)
 Explain why we should be "wowed" by your assignment. Include any relevant HTML and CSS line numbers for us to examine.
-
-
