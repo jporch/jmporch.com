@@ -94,4 +94,10 @@ div[class*="col-"] {
     left: 0;
   }
 }
+@media  (max-width: 318px) {
+  .pull-right {
+    float: none;
+    clear: none;
+  }
+}
 /* End Float Grid */

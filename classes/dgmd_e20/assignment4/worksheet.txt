@@ -36,8 +36,13 @@ https://jmporch.com/classes/dgmd_e20/assignment4/grid.css
 
 
 8. HTML and CSS line numbers for where  reordering occurs:
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.htm (line 67, 73)
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.css (line 9, 12)
 
 9. HTML and CSS line numbers for where grid offset OR nested grid occurs:
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.htm (line 30)
+https://jmporch.com/classes/dgmd_e20/assignment4/grid.css (line 47)
+
 
 
 PART 2C FLOAT LAYOUT
@@ -68,7 +73,11 @@ PART 4: CSS LAYOUT PAPER
 If you have created a .DOC(X) file, PDF file, or a text file, zip it as part of your submission. 
 
 If you want to use Google Docs or similar online service, indicate a URL where we might find your paper:
-
+https://jmporch.com/classes/dgmd_e20/assignment4/ResponsiveDesignEssay.docx
 
 PART 5: WOW US (GRAD STUDENTS ONLY)
 Explain why we should be "wowed" by your assignment. Include any relevant HTML and CSS line numbers for us to examine.
+
+I focused on designing my markup and CSS such that the bulk of it is shared (with only minor markup tweaks between versions for convenience in replicating the same layout in all 3 examples). This allows you to easily see how the different strategies are implemented in a side-by-side manner. For instance, you can see how float and flex involve setting many specific percentages to get the columns right, while grid is mostly about definining templates in terms of fr, which in turn shows how much simpler it is to change the number of columns for grid then in the other strategies.
+
+I also thought my "Reflection" write-up did a solid job of distilling down major strengths, weaknesses, and important considerations of the 3 strategies I picked: all have their reasons why you might want to choose them, and while I believe my argument for why grid is "best" stands, I also make a point to indicate that sometimes you simply don't need what grid offers and it can make sense to "settle" for a simpler option.
