@@ -5,7 +5,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Slab', Georgia, serif;
+  font-display: fallback;
   font-size: 14pt;
   height: 98vh;
   width: 98vw;
@@ -38,7 +39,7 @@ nav {
   height: 85vh;
   width: 16vw;
   font-weight: bold;
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 nav > button {
   display: none;
@@ -70,6 +71,9 @@ nav li > a {
   color: rgb(35, 82, 124);
   text-decoration: none;
 }
+nav li > a:visited {
+  color: rgb(35, 82, 124);
+}
 nav > hr {
   margin: 0 .5em;
   border-color: rgb(232,232,232);
@@ -88,6 +92,18 @@ main {
   font-size: 1.15em;
   overflow-y: scroll;
 }
+section {
+  transition:  500ms visibility;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+section.active {
+  transition:  500ms visibility;
+  visibility: visible;
+  opacity: 1;
+  display: inherit;
+}
 section > h1 {
   font-size: 22pt;
   width: 100%;
@@ -103,22 +119,63 @@ section > img.headshot {
   margin: .5em;
   background-color: white;
 }
-section > p {
-  padding: 0 1em;
-}
-section {
-  transition:  500ms visibility;
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-}
-section.active {
-  transition:  500ms visibility;
-  visibility: visible;
-  opacity: 1;
-  display: inherit;
+section > p, section > div {
+  padding: 0 .5em;
 }
 /* End Content*/
+
+/* Collapse */
+.collapse {
+  margin-bottom: .5em;
+}
+.collapse-heading {
+  padding: .5em 0;
+  margin: 0;
+  font-size: 14pt;
+  font-style: italic;
+  cursor: pointer;
+}
+.collapse-heading > span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+.minus-icon {
+  background-image: url(content/minus_icon.png);
+}
+.plus-icon {
+  background-image: url(content/plus_icon.png);
+}
+.collapse-body {
+  font-size: 14pt;
+  opacity: 1;
+  transition: all 250ms;
+}
+.collapse-body.minimized {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  transition: all 250ms;
+}
+.collapse-body > * {
+  display: block;
+  margin-left: .5em;
+  padding-left: .5em;
+  border-left: 2px solid rgb(210, 210, 210);
+  padding-top: .75em;
+}
+.collapse-body > .list-item {
+  padding-left: 1em;
+  padding-top: .5em;
+}
+.collapse-body > *:first-child {
+  border-top-left-radius: 8px;
+  padding-top: 0;
+}
+.collapse-body > *:last-child {
+  border-bottom-left-radius: 8px;
+}
+/* End Collapse */
 
 .copyright-notice {
   text-align: center;
