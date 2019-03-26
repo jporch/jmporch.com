@@ -6,7 +6,6 @@ html {
 }
 body {
   font-family: 'Josefin Slab', Georgia, serif;
-  font-display: fallback;
   font-size: 14pt;
   height: 98vh;
   width: 98vw;
@@ -59,6 +58,7 @@ nav > ul > li {
   list-style: none;
   padding: .35em .5em;
   margin: .5em .3em;
+  cursor: pointer;
   transition:  250ms ease-out;
 }
 nav li:hover {
@@ -93,14 +93,11 @@ main {
   overflow-y: scroll;
 }
 section {
-  transition:  500ms visibility;
+  transition: all 500ms;
   opacity: 0;
-  visibility: hidden;
   display: none;
 }
 section.active {
-  transition:  500ms visibility;
-  visibility: visible;
   opacity: 1;
   display: inherit;
 }
@@ -148,14 +145,12 @@ section > p, section > div {
 }
 .collapse-body {
   font-size: 14pt;
-  opacity: 1;
-  transition: all 250ms;
-}
-.collapse-body.minimized {
-  visibility: hidden;
   opacity: 0;
-  display: none;
   transition: all 250ms;
+  overflow: hidden;
+}
+.collapse-body.visible {
+  opacity: 1;
 }
 .collapse-body > * {
   display: block;

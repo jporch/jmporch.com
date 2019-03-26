@@ -23,13 +23,12 @@ function toggleIcon(element) {
     element.classList.toggle('plus-icon');
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    var collapse = document.getElementsByClassName("collapse");
-    for (var c = 0; c < collapse.length; ++c) {
-        collapse[c].children[0].onclick = function() {
-            toggleIcon(this.children[0]);
-            console.log(this.nextElementSibling);
-            this.nextElementSibling.classList.toggle("minimized");
-        };
+function toggleCollapse(collapse) {
+    toggleIcon(collapse.children[0]);
+    collapse.nextElementSibling.classList.toggle("visible");
+    if(collapse.nextElementSibling.classList.contains("visible")) {
+        collapse.nextElementSibling.style.maxHeight = collapse.nextElementSibling.scrollHeight + 'px';
+    } else {
+        collapse.nextElementSibling.style.maxHeight = 0;
     }
-});
+}
