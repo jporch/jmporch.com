@@ -7,14 +7,21 @@ function showTab(id) {
 }
 
 function isMobile() {
-    return window.matchMedia("screen and (max-width: 640px)").matches;
+    return window.matchMedia("screen and (max-width: 940px)").matches;
 }
 function isDesktop() {
-    return window.matchMedia("screen and (min-width: 641px)").matches;
+    return window.matchMedia("screen and (min-width: 941px)").matches;
 }
 
-function toggleSidebar(spd=400,que=false) {
+function toggleSidebar() {
     if (isMobile()){
+        nav = document.getElementById("nav-content");
+        nav.classList.toggle("visible");
+        if(nav.classList.contains("visible")) {
+            nav.style.maxHeight = nav.scrollHeight + 'px';
+        } else {
+            nav.style.maxHeight = 0;
+        }
     }
 }
 
