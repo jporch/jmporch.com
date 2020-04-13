@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The personal portfolio of Jesse M. Porch, an application developer and writter currently living in Boston, Massachusetts and working at Harvard Law School.">
     <link href="style.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
     <script src="code.js" async></script>
   </head>
   <body>
     <div id="skip-nav"><a href="#content">Skip to content</a></div>
     <nav>
-      <h1>
+      <div id="nav-header">
         Jesse M. Porch
-          <button type="button" aria-label="Toggle Navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      </h1>
+        <button id="nav-collapse" type="button" aria-label="Toggle Navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
       <div id="nav-content">
         <ul>
-          <li id="about_button" onclick="showTab('about');"><a href="#about">About Me</a></li>
-          <li id="work_button" onclick="showTab('work');"><a href="#work">Work Experience</a></li>
-          <li id="education_button" onclick="showTab('education');"><a href="#education">Education</a></li>
-          <li id="portfolio_button" onclick="showTab('portfolio');"><a href="#portfolio">Portfolio</a></li>
+          <li><a href="about.htm">About Me</a></li>
+          <li><a href="work.htm">Work Experience</a></li>
+          <li><a href="education.htm">Education</a></li>
+          <li><a href="portfolio.htm">Portfolio</a></li>
         </ul>
         <ul>
           <li><a href="mailto:porchjm@gmail" target="_blank" rel="noopener">Email</a></li>
           <li><a href="https://www.linkedin.com/in/jmporch" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
         <ul>
-          <li><a href="content/Resume_3-22-16.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a href="content/Resume_1-26-19 _Jesse_M_Porch.pdf" target="_blank" rel="noopener">Resume</a></li>
           <li><a href="https://github.com/jporch" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
@@ -41,16 +39,13 @@
 
     <main id="content">
       <!-- About -->
-      <section id="about" class="active" aria-labelledby="about-heading">
         <h1 id="about-heading">About Me</h1>
         <img src="content/Jesse_Porch_240x240.jpg" class="headshot" alt="Headshot of Jesse Porch">
         <p>Technology should enhance our humanity, not distort it. As an experienced software developer, my goal is to create and disseminate quality software that respects the whole person of its users and truly makes their lives better. Such work should be polished, humane, effective, and dependable. As such, I hold myself to a high standard of competence in academic study, personal research, and professional performance. My attention to detail and conscientiousness are both driven by a commitment to excellence and integrity in everything I do.</p>
         <p>Both as a professional developer and a research fellow, I have always sought to integrate all elements of my life. My studies in the realms of anthropology, literature, and philosophy, stem from the idea that the most effective developers must cultivate a strong interest in many things outside math and technology. A life well-lived is an integral part of who I am as a software professional, and I value my non-technical skills just as highly as my professional expertise. Because of this I am well-prepared to focus on the details of implementation while maintaining a firm grasp on the broader meaning of the tasks I undertake.</p>
         <p>Supported by my technical proficiency and commitment to healthy relationships, I aspire to grow in leadership responsibility so that I can contribute to both the creation of exemplary software and to the development of a sustainable culture that supports it.</p>
-      </section>
 
       <!-- Work -->
-      <section id="work" aria-labelledby="work-heading">
         <h1 id="work-heading">Work Experience</h1>
         <div class="subsection">
           <h2 class="subsection-heading">Application Developer, Harvard Law School, Cambridge, MA</h2>
@@ -99,10 +94,8 @@
             <span>My personal contributions involved working on the fixed-point mathematics libraries needed to facilitate our work the the DSP, as well as contributions to the design and implementation of the core ray-tracing engine. I also contributed to the writing and editing of the JGT article.</span>
           </div>
         </div>
-      </section>
 
       <!-- Education -->
-      <section id="education" aria-labelledby="education-heading">
         <h1 id="education-heading">Education</h1>
         <div class="subsection">
           <h2 class="subsection-heading">Trinity Fellows Academy, Royal Oak, MD</h2>
@@ -118,10 +111,8 @@
             <span>ABET-accredited Computer Science department headed by <a href="http://www.gcc.edu/academics/SEM/computerscience/Pages/Faculty-Profiles.aspx?listid=16&listtype=Faculty&returl=http%3a%2f%2fwww.gcc.edu%3a80%2facademics%2fSEM%2fcomputerscience%2fPages%2fFaculty-.aspx&startrow=0" target="_blank" rel="noopener">Dr. William Birmingham</a>. Advised by <a href="http://www.rtvtk.org/~cgribble/">Dr. Christiaan Gribble</a>. In addition to classes required for graduation, I pursued additional mathematics classes (Linear Algebra, Statistics Theory), summer research in mathematics and computer graphics (also under Dr. Gribble) <a href="https://www.cs.unc.edu/~jheinly/publications/jgt2009-heinly.pdf" target="_blank" rel="noopener">published</a> in the <cite>Journal of Graphics, GPU, and Game Tools</cite>. In addition to my Computer Science and math classes, I studied electives such as Technical Management, Creative Writing, and Fantasy Literature.</span>
           </div>
         </div>
-      </section>
 
       <!-- Portfolio -->
-      <section id="portfolio" aria-labelledby="portfolio-heading">
         <h1 id="portfolio-heading">Portfolio</h1>
         <div class="subsection">
           <h2 class="subsection-heading">Games Writing</h2>
@@ -167,7 +158,6 @@
             <span>This site by Jesse M. Porch. Valid <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.jmporch.com%2F" target="_blank" rel="noopener">HTML</a> and <a href="https://jigsaw.w3.org/css-validator/validator?uri=www.jmporch.com%2Fstyle.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" rel="noopener">CSS</a>.</span>
           </div>
         </div>
-      </section>
     </main>
     <div class="copyright-notice">Photo copyright <a href="https://www.karenadixon.com/" target="_blank" rel="noopener">Karena Dixon</a>. All other content copyright Jesse M. Porch, 2019.</div>
   </body>
