@@ -31,25 +31,38 @@ nav {
   border-radius: 4px;
   width: 12em;
   font-weight: bold;
+  display: grid;
+  grid-template-rows: 2em auto;
 }
 nav button {
   display: none;
 }
-nav h1 {
+nav > h1 {
   text-align: center;
   font-size: 1.75em;
   margin: 0;
   padding: .3em;
 }
+#nav-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
 nav ul {
   padding: .5em;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 1;
+}
+nav ul:first-of-type {
+  flex-basis: 2;
 }
 nav ul > li {
   border-radius: 4px;
   list-style: none;
   padding: .35em .5em;
-  margin: .5em .3em;
   cursor: pointer;
   transition:  250ms ease-out;
 }
@@ -65,11 +78,6 @@ nav li > a {
 }
 nav li > a:visited {
   color: rgb(35, 82, 124);
-}
-nav hr {
-  margin: 0 .5em;
-  border-color: rgb(232,232,232);
-  opacity: .5;
 }
 /* End Sidebar */
 
@@ -113,61 +121,54 @@ section > p, section > div {
 }
 /* End Content*/
 
-/* Collapse */
-.collapse {
+/* Subsection */
+.subsection {
   margin-bottom: .5em;
 }
-.collapse-heading {
+.subsection-heading {
   padding: .5em 0;
   margin: 0;
   font-size: 14pt;
   font-style: italic;
   cursor: pointer;
 }
-.collapse-heading > span {
+.subsection-heading > span {
   display: inline-block;
   height: 15px;
   width: 15px;
 }
-.minus-icon {
-  background-image: url(content/minus_icon.png);
-}
-.plus-icon {
-  background-image: url(content/plus_icon.png);
-}
-.collapse-body {
+
+.subsection-body {
   font-size: 14pt;
-  opacity: 0;
   transition: all 250ms;
   overflow: hidden;
 }
-.collapse-body.visible {
-  opacity: 1;
-}
-.collapse-body > * {
+
+.subsection-body > * {
   display: block;
   margin-left: .5em;
   padding-left: .5em;
   border-left: 2px solid rgb(210, 210, 210);
   padding-top: .75em;
 }
-.collapse-body > .list-item {
+.subsection-body > .list-item {
   padding-left: 1em;
   padding-top: .5em;
 }
-.collapse-body > *:first-child {
+.subsection-body > *:first-child {
   border-top-left-radius: 8px;
   padding-top: 0;
 }
-.collapse-body > *:last-child {
+.subsection-body > *:last-child {
   border-bottom-left-radius: 8px;
 }
-/* End Collapse */
+/* End subsection */
 
 .copyright-notice {
   text-align: center;
   flex-basis: 100%;
   font-size: .85em;
+  padding-top: .5em;
 }
 
 /* Desktop Layout */
@@ -200,7 +201,6 @@ section > p, section > div {
   nav > h1 > button {
     display: inline;
     position: relative;
-    float: right;
     padding: 7px 10px;
     margin-right: 15px;
     background-color: transparent;

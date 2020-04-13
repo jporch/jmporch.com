@@ -24,18 +24,3 @@ function toggleSidebar() {
         }
     }
 }
-
-function toggleIcon(element) {
-    element.classList.toggle('minus-icon');
-    element.classList.toggle('plus-icon');
-}
-
-function toggleCollapse(collapse) {
-    toggleIcon(collapse.children[0]);
-    collapse.nextElementSibling.classList.toggle("visible");
-    if(collapse.nextElementSibling.classList.contains("visible")) {
-        collapse.nextElementSibling.style.maxHeight = collapse.nextElementSibling.scrollHeight + 'px';
-    } else {
-        collapse.nextElementSibling.style.maxHeight = 0;
-    }
-}

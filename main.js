@@ -13,10 +13,6 @@ $(document).ready(function() {
     }
     dispTab();
   });
-  $('.collapse-heading').click(function() {
-    toggleIcon($(this).children('span')[0]);
-    $(this).next('.collapse-body').slideToggle(400);
-  });
   newPage();
 });
 
